@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
+body{
+    background-color: #f1f1f1;
+    font-family:"Kedebideri", sans-serif;
+}                                                                   
+.nav{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}                               
+.navigation_menu{
+    margin-left: 330px;
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+}
+.navigation_menu{
+    margin-left: 140px;
+    list-style-type: none;
+}
+.navigation_menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.navigation_btn{
+    background-color: rgb(236, 154, 39);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    height: 35px;
+    width: 200px;
+}
+.navigation_btn:hover{
+    background-color: orange;
+}
+.supaCoffee{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.section{
+    display: flex;
+    justify-content: space-around;
+}
+.img{
+    margin-right: 50px;
+    border-radius: 30px;
+    height: 600px;
+}
+.img:hover{
+    box-shadow: 5px 5px 50px 10px  rgba(200, 102, 5, 0.699);
+}
+.text_area{
+    text-align: center;
+}
+.h1_text{
+    font-size: 80px;
+}
+.p_text{
+    font-size: 18px;
+}
+.block{
+    display: flex;
+    justify-content: space-around;
+}   
+.boxes{
+    display: flex;
+     justify-content: space-around;
+      text-align: center;
+}      
+.over{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: orange;
+}          
+.under{
+    margin-top: 0;
+    font-size: 50px;
+}
+.section_second{
+   text-align: center;
+    background-color: rgb(248, 238, 228);
+    min-height: 50px;
+}
+.second_txt{
+    margin-left: 200px;
+    font-size: 40px;
+    width: 1100px;
+    font-weight: 400;
+    font-style: italic;
+}
+.img_second{
+    width: 90px;
+    margin-top: 60px;
+}
+.blocks{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 90px;
+    font-style: italic;
+}
+.banner_img{
+    border-radius: 30px;
+     width: 1510px;
+}
+.banner_img_1{
+     border-radius: 30px;
+     width: 1510px;
+}
+.banner_img:hover{
+    box-shadow: 5px 5px 50px 10px  rgba(200, 102, 5, 0.699);
+}
+.section_four{
+    text-align: center;
+    margin-top: 100px
+}
+.four_txt{
+    font-size: 26px;
+   font-style: italic;
+}
+.coffee_shops{
+    display: flex;
+    justify-content: space-between;    
+}
+.coffee_logo:hover{
+  box-shadow: 5px 5px 50px 10px  rgba(200, 102, 5, 0.699); 
+}
+.coffee_logo{
+    border-radius: 30px;
+}
+.btn{
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+    border-color: orange;
+    height: 40px;
+    width: 170px;
+}
+.slider{
+    background: var(--blanco);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.slider::before,
+.slider::after{
+    background: 
+    linear-gradient(to right,  rgb(248, 238, 228) 0%,#ffffff00 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    gap: 5px;
+    animation: scroll 50s linear infinite;
+    display: flex;
+    cursor: pointer;
+    width:  calc(7rem * 16);
+}
+.slider .slide-track:hover {
+    animantion-play-state: paused;
+}
+.slider .slide{
+    height: 7rem;
+}
+.slider{
+    margin-top: 30px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(calc(-7rem * 12));
+    }
+}
+.footer{
+    gap: 50px;
+    display: flex;
+    background-color:  rgb(248, 238, 228);
+    margin-top: 30px;
+}
+.footer_img{
+    border-radius: 30px;
+    width: 700px;
+}
+.footer_img:hover{
+     box-shadow: 5px 5px 50px 10px  rgba(200, 102, 5, 0.699); 
+}
+.h1_footer{
+    margin-top: 70px;
+    font-size: 40px;
+}
+.p_footer{
+    font-size: 20px;
+}
+.name{
+    font-size: 16px;
+    border: none;
+    background-color:  rgb(248, 238, 228);
+    color: rgb(169, 164, 164);
+}
+.phone{
+     font-size: 16px;
+    border: none;
+    background-color:  rgb(248, 238, 228);
+    color: rgb(169, 164, 164);
+}
+.email{
+    font-size: 16px;
+    border: none;
+    background-color:  rgb(248, 238, 228);
+    color: rgb(169, 164, 164);
+}
+.finish{
+    margin-top: 40px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 170px;
+}
+.finish:hover{
+    background-color: peru;
+}
